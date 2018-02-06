@@ -1,0 +1,8 @@
+### Import the data
+setwd("C:/Users/tbarnum/Documents/Tanzania_Geocenter/tzkr7hdt")
+tan.kr <- read.dta("TZKR7HFL.dta", convert.factors = TRUE)
+setwd("C:/Users/tbarnum/Documents/Tanzania_Geocenter/tzhr7hdt")
+tan.HH <- read.dta("TZHR7HFL.dta", convert.factors = TRUE)
+
+tan.kr$matching <- paste(tan.kr$v001, tan.kr$v002, sep = "_")
+tan.HH$matching <- paste(tan.HH$hv001, tan.HH$hv002, sep = "_")
